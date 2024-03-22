@@ -1,0 +1,161 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url(green.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card {
+    margin: 30px 0;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 600px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    box-shadow: 22px 25px 35px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 22px 25px 35px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 22px 25px 35px 1px rgba(0, 0, 0, 0.66);
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card input:focus,
+textarea:focus {
+    border: 2px solid rgb(230, 236, 230);
+}
+
+.card input {
+    font-size: 20px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid rgb(33, 71, 33);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.card select {
+    font-size: 20px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.checkbox input {
+    font-size: 5px;
+}
+
+.cancelbtn {
+    width: 20%;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: 10px;
+    background-color: transparent;
+}
+
+.psw {
+    justify-content: flex-end;
+    float: right;
+    padding-top: 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn button {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(59, 70, 68);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+form button:hover {
+    background-color: rgb(89, 69, 42);
+    color: white;
+}
+
+form button:active {
+    background-color: rgb(212, 189, 150);
+}
+
+.message {
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+form p {
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+
+    .card {
+        padding: 8px 16px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .card label {
+        font-size: 16px;
+    }
+
+    .card input {
+        font-size: 16px;
+        font-weight: 400;
+        height: 30px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    form p {
+        font-size: 14px;
+    }
+}
